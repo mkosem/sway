@@ -522,7 +522,6 @@ static void damage_handle_destroy(struct wl_listener *listener, void *data) {
 
 static void handle_destroy(struct wl_listener *listener, void *data) {
 	struct sway_output *output = wl_container_of(listener, output, destroy);
-	struct sway_server *server = output->server;
 	wl_signal_emit(&output->events.destroy, output);
 
 	if (output->enabled) {
