@@ -684,7 +684,6 @@ void handle_new_output(struct wl_listener *listener, void *data) {
 	}
 
 	transaction_commit_dirty();
-
 	update_output_manager_config(server);
 }
 
